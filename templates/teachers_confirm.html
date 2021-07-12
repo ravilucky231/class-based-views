@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>delete data</title>
+</head>
+<body>
+<center>
+  <form method="post">
+      Are You Sure To Delete This Teacher Record?<br/><br/>
+      {% csrf_token %}
+      <button type="submit" value="Confirm">Confirm</button>
+
+  </form><br/>
+ <a href="/teacherslist/"><button type="button" value="Cancel">Cancel</button></a>
+</center>
+</body>
+</html>

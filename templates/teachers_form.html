@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>create page</title>
+</head>
+<body>
+<center>
+    <form method="post">
+        <table>
+            {% csrf_token %}
+            {{form.as_table}}
+
+        </table>
+         <button type="submit">Submit</button>
+
+    </form>
+
+</center>
+</body>
+</html>
